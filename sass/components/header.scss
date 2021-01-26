@@ -1,0 +1,17 @@
+$white:white;
+.header{
+    background-color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.2rem; //10*6
+}
+
+.header-searchbar{
+    
+}
+.header-logo img{
+    width: 35%; 
+    height: 35%;
+    object-fit: cover;
+}

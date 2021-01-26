@@ -1,5 +1,11 @@
+@import './variables.scss';
+@import './base.scss';
+@import './components/header.scss';
+
 body{
-    background-color: black;
-    color: red;
-    font-size: large;
+    color: $text_color;
+    font-size: 2rem;
+    background-color: $background;
+    display: flex;
+    flex-direction: column;
 }

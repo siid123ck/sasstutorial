@@ -1,8 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5.2rem;
+}
+
+.header-logo img {
+  width: 35%;
+  height: 35%;
+  object-fit: cover;
+}
+
 body {
-  background-color: black;
-  color: red;
-  font-size: large;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */

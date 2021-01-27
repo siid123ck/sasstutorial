@@ -19,3 +19,5 @@
 #sass selector 
 #sass intospection 
 #sass color 
+
+# later I'll make this app work using React JS which gonna be another complete course

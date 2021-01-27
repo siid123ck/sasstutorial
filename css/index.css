@@ -14,6 +14,57 @@ html {
   justify-content: space-around;
   align-items: center;
   height: 5.2rem;
+  border-bottom: 1px solid lightgrey;
+}
+.header-logo {
+  padding-left: 15rem;
+}
+.header-nav {
+  margin-right: 10rem;
+}
+.header-nav ul {
+  display: flex;
+  list-style: none;
+}
+.header-nav li ion-icon {
+  font-size: 2.6rem;
+}
+.header-nav li:not(:last-child) {
+  margin-right: 2rem;
+}
+.header-nav-img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.header-searchbar {
+  padding-right: 1rem;
+  position: relative;
+}
+.header-searchbar input {
+  background-color: whitesmoke;
+  padding: 0.5rem 2.2rem;
+  border: 1px solid lightgrey;
+  border-radius: 3%;
+}
+.header-searchbar input:focus {
+  outline: none;
+}
+.header-searchbar input::placeholder {
+  text-align: center;
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.header-searchbar input:focus + .search-icon {
+  left: 5%;
+}
+.header-searchbar .search-icon {
+  position: absolute;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+  left: 25%;
+  transform: translateY(55%);
 }
 
 .header-logo img {

@@ -5,10 +5,60 @@ $white:white;
     justify-content: space-around;
     align-items: center;
     height: 5.2rem; //10*6
+    border-bottom: 1px solid $secondary-color;
+    &-logo{
+        padding-left: 15rem;
+    }
+    &-nav{
+       margin-right: 10rem;
+        ul{
+            display: flex; 
+            list-style: none;
+        }
+        li{
+           & ion-icon{
+               font-size: 2.6rem;
+           }  
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
+        }
+        &-img{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+        }
+    }
 }
 
 .header-searchbar{
-    
+    padding-right: 1rem;
+    position: relative;
+    input{
+        background-color: $background;
+        padding: .5rem 2.2rem;
+        border: 1px solid $secondary-color;
+        border-radius: 3%;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            text-align: center;
+            padding-left: 1rem;
+            color: rgba($text_color, .6);
+        }
+        &:focus + .search-icon{//+ indicated to sibling
+            left: 5%;
+        }
+       
+    }
+    & .search-icon{
+        position: absolute;
+        font-size: 1.2rem;
+        color: rgba($text_color, .6);
+        left: 25%;
+        transform: translateY(55%);
+    }
 }
 .header-logo img{
     width: 35%; 
